@@ -1,4 +1,4 @@
-=Oracle XE Scriptrunner=
+# Oracle XE Scriptrunner
 Uses an Oracle XE box and adds scriptrunner (and java to it).
 * Promote user is promotemgr
 * Promote password is vagrant
