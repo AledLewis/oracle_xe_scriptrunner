@@ -1,7 +1,7 @@
 result=1
 while [ $result -eq 1 ] 
 do
-  sqlplus -s / as sysdba << EOF
+  sqlplus / as sysdba << EOF
     var status number;
     begin 
       select 
@@ -13,6 +13,6 @@ do
     exit :status
 EOF
   result=$? 
-  echo "database open check is $result "
+  echo "database open check is $result"
   sleep 1
 done

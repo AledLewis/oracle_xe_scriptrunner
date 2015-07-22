@@ -1,11 +1,6 @@
-sudo usermod -a -G dba vagrant
 sudo mkdir /db
 sudo chmod 777 /db
-
-bash /vagrant/db_open_wait.sh
-
 sqlplus -s / as sysdba << EOF
-
 ALTER USER sys IDENTIFIED BY vagrant;
 alter system set db_create_file_dest = '/db';
 exit;
